@@ -5,26 +5,32 @@
 ## Running
 
 Start up Redis:
-> service redis-server start
+
+		> service redis-server start
 
 Start Sidekiq
-> rake sidekiq
+
+		> rake sidekiq
 
 Start Application
-> bundle install
-> rake run
+
+		> bundle install
+		> rake run
 
 ## Running test
 
-> rake tests
+		> rake tests
 
 ## API
 
 *Retrieve all drivers with location*
-  $ curl -X GET http://localhost:8002/drivers
+  
+  	$ curl -X GET http://localhost:8002/drivers
 
 *Retrieve all driver with location*
-  $ curl -X GET http://localhost:8002/drivers/1
+  
+  	$ curl -X GET http://localhost:8002/drivers/1
 
 *Assign nearest driver with latitute/longitude, with asynchronous send text message:*
-  $ curl -X PUT -d '{"lat":"10.7954196", "long":"106.6506274"}' http://localhost:8002/drivers/nearest
+  
+  	$ curl -X PUT -d '{"lat":"10.7954196", "long":"106.6506274"}' http://localhost:8002/drivers/nearest

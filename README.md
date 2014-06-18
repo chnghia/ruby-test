@@ -6,12 +6,16 @@ For the first app, you would need to create 2 set of APIs.
 The first set would allow me to:
 
 1) create a passenger record with my phone number
+
 2) retrieve my system generated password based on my phone number.
 
 The second set you would need to be able to:
+
 1) create a booking as a passenger (the passenger needs to be authenticated 
 with the correct system generated password) 
+
 2) retrieve the booking id of the newly created booking. 
+
 3) retrieve the details of the booking with the driver's name and phone 
 number.
 
