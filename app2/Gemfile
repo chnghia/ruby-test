@@ -1,0 +1,21 @@
+source 'https://rubygems.org'
+
+ruby "1.9.3"
+
+gem 'sidekiq'
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'dm-core'
+gem 'dm-sqlite-adapter'
+gem 'dm-validations'
+gem 'dm-timestamps'
+gem 'dm-migrations'
+gem 'dm-serializer'
+gem 'dm-sweatshop'
+gem "faster_haversine"
+
+group :development, :test do
+  gem 'debugger'
+  gem 'timecop'
+  gem 'simplecov'
+end

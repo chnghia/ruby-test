@@ -1,0 +1,20 @@
+
+desc 'Run the app'
+  task :run do
+    exec 'rackup config.ru --port=8002'
+  end
+
+desc 'Run the sidekiq'
+  task :sidekiq do
+    exec 'sidekiq -r ./app2.rb'
+  end
+
+desc 'Seeds the database'
+  task :seed do
+  	require "#{Dir.pwd}/data/seeds.rb"
+  end
+
+desc 'Test the app'
+	task :tests do
+		exec 'ruby spec/app2_test.rb'
+	end

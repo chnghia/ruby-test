@@ -1,0 +1,9 @@
+desc 'Run the app'
+  task :run do
+    exec 'rackup config.ru --port=8001'
+  end
+
+desc 'Test the app'
+	task :tests do
+		exec 'ruby spec/app1_test.rb'
+	end
